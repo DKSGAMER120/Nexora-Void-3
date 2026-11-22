@@ -1,0 +1,74 @@
+/* NEXORA VOID 3.0 — approved design tokens and progressive visual layer */
+:root{
+  color-scheme:dark;
+  --bg:#08090D;
+  --panel:#101116;
+  --panel-2:#171821;
+  --line:#292936;
+  --blue:#8B5CF6;
+  --blue-bright:#A78BFA;
+  --cyan:#67D5FF;
+  --text:#F5F3FA;
+  --muted:#B1B0BE;
+  --dim:#9293A3;
+  --success:#38D996;
+  --warning:#F5B942;
+  --error:#F16C7A;
+}
+html,body{background:#08090D;color:#F5F3FA}
+body{font-family:Inter,system-ui,sans-serif}
+.background-grid{
+  opacity:.09;
+  background-image:
+    linear-gradient(rgba(167,139,250,.11) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(103,213,255,.08) 1px,transparent 1px);
+}
+.ambient-blue{background:#6D42C8;opacity:.14}
+.ambient-cyan{background:#247EA6;opacity:.09}
+.site-header{
+  background:rgba(8,9,13,.9);
+  border-bottom-color:rgba(167,139,250,.16);
+}
+.brand-mark{
+  background:linear-gradient(145deg,#A78BFA,#5B35A8);
+  box-shadow:0 0 24px rgba(139,92,246,.24);
+}
+.nav a:hover,.header-login:hover{color:#A78BFA}
+.hero h1 span,.join-section h2 span,.store-content h2 span,
+.section-heading h2 span,.player-panel h2 span{color:#A78BFA}
+.eyebrow,.card-link,.route-breadcrumb button{color:#67D5FF}
+.live-dot{background:#38D996;box-shadow:0 0 12px rgba(56,217,150,.55)}
+.button-primary{
+  background:#7045C5;border-color:#8B5CF6;
+  box-shadow:0 8px 28px rgba(139,92,246,.2)
+}
+.button-primary:hover{background:#8056D5}
+.button:hover:not(:disabled){border-color:#67D5FF}
+.connect-bar,.directory-group,.route-aside,.route-state,
+.directory-links button,.route-aside>button,.route-feature,
+.integration-notice{background-color:#101116}
+.experience-card{
+  background:linear-gradient(145deg,rgba(23,24,33,.96),rgba(13,14,20,.96));
+  border-color:#292936;
+}
+.experience-card:hover{border-color:rgba(139,92,246,.65)}
+.network-bar{background:rgba(16,17,22,.94);border-color:#292936}
+.data-section{
+  background:linear-gradient(180deg,rgba(16,17,22,.94),rgba(8,9,13,.98));
+  border-color:#292936;
+}
+.store-section{
+  background:radial-gradient(ellipse at 75% 50%,rgba(109,66,200,.16),transparent 48%),#0A0B11;
+  border-color:#292936;
+}
+.store-symbol{background:#171821;border-color:#5B438B}
+.store-orbit{border-color:rgba(139,92,246,.34);box-shadow:0 0 60px rgba(139,92,246,.12),inset 0 0 50px rgba(103,213,255,.04)}
+.route-hero h1{color:#F5F3FA}
+.route-feature{border-color:#292936}
+.route-feature>span{color:#67D5FF}
+.route-aside>button:hover,.directory-links button:hover{border-color:#8B5CF6;color:#C4B5FD}
+.integration-notice{border-color:rgba(245,185,66,.22)}
+.footer{border-top-color:rgba(167,139,250,.14)}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}
+}
