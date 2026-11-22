@@ -112,3 +112,45 @@ button{font:inherit;color:inherit;cursor:pointer}
 @media(max-width:900px){.site-header{padding:0 24px}.nav{gap:17px}.hero{padding-left:5%;padding-right:5%;grid-template-columns:1fr .8fr}.hero-art{transform:scale(.85)}.hero h1{letter-spacing:-3px}.network-bar{gap:25px}.section,.section-inner{padding-left:25px;padding-right:25px}.store-section{padding-left:6%;padding-right:6%}}
 @media(max-width:650px){.site-header{height:70px}.brand-name{font-size:14px}.brand-name span{font-size:8px}.mobile-menu{display:block}.nav{display:none;position:absolute;top:69px;left:0;right:0;padding:22px 25px;background:#0d1422;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:22px}.nav-open{display:flex}.header-login{margin-left:auto;margin-right:14px;font-size:9px}.hero{display:block;min-height:720px;padding:85px 24px 90px}.hero h1{font-size:clamp(55px,14vw,76px);letter-spacing:-3px}.hero-description{font-size:13px}.hero-art{position:absolute;right:-75px;bottom:65px;width:300px;height:300px;opacity:.34;transform:scale(.82)}.nexora-emblem{width:145px;height:145px}.nexora-emblem span{font-size:90px}.art-side-label{display:none}.hero-meta{left:24px;right:24px;font-size:8px}.network-bar{justify-content:flex-start;padding:22px 24px;gap:22px}.network-item{width:calc(50% - 12px)}.network-item b{font-size:9px}.section,.section-inner{padding:78px 23px}.section-heading h2,.player-panel h2{font-size:45px;letter-spacing:-2px}.experience-grid{grid-template-columns:1fr;margin-top:32px}.experience-card{min-height:225px}.feature-placeholder{align-items:flex-start;flex-wrap:wrap;padding:18px}.feature-placeholder>div:nth-child(2){flex:1;min-width:180px}.coming-label{margin-left:68px}.store-section{grid-template-columns:1fr;padding:75px 24px}.store-content h2{font-size:52px}.store-art{height:230px;opacity:.8}.player-panel{padding:28px 22px}.join-section{padding:78px 20px}.join-section h2{font-size:49px;letter-spacing:-2px}.footer{flex-direction:column;align-items:flex-start;padding:25px 23px}.footer>span{line-height:1.7}.connect-bar{max-width:100%}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* NEXORA VOID 3.0 master portal */
+.card-link{display:inline-flex;align-items:center;gap:9px;margin-top:18px;color:var(--cyan);font:600 9px 'DM Mono';letter-spacing:1px}
+.directory-search{display:flex;align-items:center;gap:12px;max-width:560px;margin:34px 0 22px;padding:14px 16px;background:#0d1728;border:1px solid var(--line);color:var(--cyan)}
+.directory-search input{width:100%;background:transparent;border:0;outline:0;color:var(--text);font:13px Inter}
+.directory-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.directory-group{padding:22px;background:rgba(13,20,34,.62);border:1px solid var(--line)}
+.directory-label,.aside-heading{font:600 10px 'DM Mono';letter-spacing:1.8px;color:var(--cyan);margin-bottom:15px}
+.directory-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.directory-links button,.route-aside>button{display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:left;padding:12px;background:#101c30;border:1px solid rgba(36,51,75,.8);color:#dce8fa;font-size:11px}
+.directory-links button:hover,.route-aside>button:hover{border-color:var(--cyan);color:var(--cyan)}
+.route-page{max-width:1320px;margin:auto;padding:45px 5.5% 100px;min-height:80vh}
+.route-breadcrumb{display:flex;align-items:center;gap:12px;flex-wrap:wrap;color:#7186a4;font:9px 'DM Mono';letter-spacing:1px}
+.route-breadcrumb button{display:flex;align-items:center;gap:7px;background:none;border:0;color:var(--cyan);font:inherit}
+.route-breadcrumb b{color:#d9e7fb;font-weight:500}
+.route-hero{padding:95px 0 65px;max-width:850px}
+.route-hero h1{font:700 clamp(43px,6vw,76px)/.98 'Space Grotesk';letter-spacing:-3px;margin:20px 0;color:#f4f8ff}
+.route-hero>p{max-width:700px;color:var(--muted);font-size:15px;line-height:1.9}
+.route-state{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:11px 14px;background:#101c30;border:1px solid var(--line);color:#9eb4d2;font:9px 'DM Mono';letter-spacing:1px}
+.state-dot{width:7px;height:7px;border-radius:50%;background:#f5b942;box-shadow:0 0 10px #f5b942}
+.route-content{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:45px;border-top:1px solid var(--line);padding-top:35px}
+.route-section-title{display:flex;align-items:center;gap:15px}
+.route-section-title>span{color:var(--cyan);font:11px 'DM Mono'}
+.route-section-title h2{font:600 17px 'Space Grotesk';letter-spacing:1px}
+.route-copy{max-width:780px;color:var(--muted);font-size:13px;line-height:1.9}
+.route-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:30px 0}
+.route-feature{min-height:130px;padding:17px;background:#0d1728;border:1px solid var(--line);display:flex;flex-direction:column;gap:13px}
+.route-feature>span{font:10px 'DM Mono';color:var(--cyan)}
+.route-feature b{font:600 12px 'Space Grotesk';line-height:1.5}
+.route-feature small{margin-top:auto;color:#7186a4;font:8px 'DM Mono';letter-spacing:1px}
+.integration-notice{display:flex;gap:15px;padding:19px;background:rgba(245,185,66,.06);border:1px solid rgba(245,185,66,.25);color:#f5c96d}
+.integration-notice>svg{flex:0 0 auto;width:20px}
+.integration-notice>div{display:flex;flex-direction:column;gap:7px}
+.integration-notice b{font:600 10px 'DM Mono';letter-spacing:1px}
+.integration-notice span{font-size:11px;line-height:1.7;color:#aab8cc}
+.route-aside{align-self:start;padding:20px;background:#0b1423;border:1px solid var(--line);display:flex;flex-direction:column;gap:9px}
+.route-aside .aside-heading:not(:first-child){margin-top:20px}
+.route-aside>button{width:100%}
+.route-aside code{font:11px 'DM Mono';color:#dce8fa;padding:12px;background:#101c30;overflow-wrap:anywhere}
+.route-aside .aside-discord{color:var(--cyan)}
+@media(max-width:850px){.directory-groups{grid-template-columns:1fr}.route-content{grid-template-columns:1fr}.route-aside{max-width:none}.route-feature-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.directory-links{grid-template-columns:1fr}.route-page{padding:30px 22px 70px}.route-hero{padding:65px 0 45px}.route-hero h1{letter-spacing:-2px}.route-feature-grid{grid-template-columns:1fr}.route-state{font-size:8px;line-height:1.6}.route-aside{padding:16px}}
